@@ -36,9 +36,6 @@ If you develop on Windows, you should edit you git configuration to change your 
 ## Built With
 
 * [Symfony](https://github.com/symfony/symfony)
-* [Sass-Lint](https://github.com/sasstools/sass-lint)
-
-
 
 ## Contributing
 
