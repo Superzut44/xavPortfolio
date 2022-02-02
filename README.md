@@ -1,4 +1,4 @@
-# xavPortfolio - Symfony 6 - PHP 8.*
+# xavPortfolio - Symfony 6 - PHP 8 *
 
 ## Getting Started for Students
 
