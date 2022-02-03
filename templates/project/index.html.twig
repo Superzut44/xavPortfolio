@@ -6,38 +6,21 @@
 <div class="portfolio">
     <h1>PORTFOLIO</h1>
 
-    <div class="card-deck">
-  <div class="card cart-margin">
-    <img class="card-img-top" src="{{ asset('build/images/visual.png') }}" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
-    </div>
-  </div>
-  <div class="card cart-margin">
-    <img class="card-img-top" src="{{ asset('build/images/visual.png') }}" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
-    </div>
-  </div>
-  <div class="card cart-margin">
-    <img class="card-img-top" src="{{ asset('build/images/visual.png') }}" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
-    </div>
-  </div>
-</div>
+    <section class="project_index_container">
+        {% for project in projects %}
+            <figure class="project_index_figure">
+            <a href="{{ path("project_show", { id: project.id }) }}">{{ 'See the notice'|trans }}</a>
+            <img src="{{ asset('build/images/visual.png') }}" alt="{{ project.name }}">
+                <figcaption class="project_index_figcaption">
+                    <p>{{ project.name }}</p>
+                    <p>{{ 'Category'|trans }} : {{ project.name }}</p>
+                </figcaption>
+                <p class="project_index_p">{{ project.name }}</p>
+            </figure>
+        {% else %}
+            <p>{{ 'No series found'|trans }}.</p>
+        {% endfor %}
+    </section>
 
     <a href="{{ path('project_new') }}">Create new</a>
 </div>
