@@ -15,4 +15,10 @@ class HomeController extends AbstractController
             'controller_name' => 'HomeController',
         ]);
     }
+
+    #[Route('/inRegardsTo', name: 'inRegardsTo')]
+    public function inRegardsTo(): Response
+    {
+        return $this->render('home/inRegardsTo.html.twig');
+    }
 }
