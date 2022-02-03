@@ -7,28 +7,37 @@ body {
 // index start
 
 .index{
-    margin: 5rem 0;
+    margin: 40rem 0 5rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     h1{
-        margin: 1rem;
+        font-size: 5rem;
+        margin: 4rem;
+    }
+    h5{
+        font-size: 3rem;
+        margin: 1rem 5rem;
+    }
+    h4{
+        font-size: 4rem;
+        margin: 1rem 5rem;
     }
 }
 
-.index{
-    margin-top: 15rem;
+.logos{
+    margin: 4rem;
 }
 
 .linkedin{
-    margin: 2rem;
-    width: 2rem;
+    margin: 3rem;
+    width: 6rem;
 }
 
 .github{
-    margin: 2rem;
-    width: 2rem;
+    margin: 3rem;
+    width: 6rem;
 }
 
 // index end
@@ -36,6 +45,7 @@ body {
 // inRegardsTo start
 
 .inRegardsTo{
+    margin: 10rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -69,3 +79,21 @@ body {
 }
 
 // inRegardsTo end
+
+// training start
+
+.training{
+    margin: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+        margin: 4rem;
+        font-size: 6rem;
+    }
+    h4{
+        font-size: 4rem;
+    }
+}
+
+// training end

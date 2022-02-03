@@ -21,4 +21,10 @@ class HomeController extends AbstractController
     {
         return $this->render('home/inRegardsTo.html.twig');
     }
+
+    #[Route('/training', name: 'training')]
+    public function training(): Response
+    {
+        return $this->render('home/training.html.twig');
+    }
 }
