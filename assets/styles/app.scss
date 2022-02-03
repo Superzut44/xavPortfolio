@@ -7,7 +7,7 @@ body {
 // index start
 
 .index{
-    margin: 40rem 0 5rem 0;
+    margin: 25rem 0 5rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,6 +52,7 @@ body {
     h1{
         margin: 4rem;
         font-size: 6rem;
+        text-align: center;
     }
     img{
         width: 50rem;
@@ -97,3 +98,60 @@ body {
 }
 
 // training end
+
+// portfolio start
+
+.portfolio{
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    h1{
+        font-size: 6rem;
+        margin: 4rem;
+        text-align: center;
+    }
+}
+
+.cart-margin{
+    margin-bottom: 5rem;
+}
+
+// portfolio end
+
+// navbar start
+
+.navbar {
+    z-index: 3;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    height: 8rem;
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    font-size: 3rem;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change background on mouse-over */
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
+  
+  /* Main content */
+  .main {
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+  }
+
+// navbar end
