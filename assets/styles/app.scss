@@ -3,3 +3,30 @@
 body {
     background-color: lightgray;
 }
+
+.index{
+    margin: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    h1{
+        margin: 1rem;
+
+
+    }
+}
+
+.index{
+    margin-top: 15rem;
+}
+
+.linkedin{
+    margin: 2rem;
+    width: 2rem;
+}
+
+.github{
+    margin: 2rem;
+    width: 2rem;
+}
