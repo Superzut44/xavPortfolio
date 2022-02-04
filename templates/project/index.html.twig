@@ -9,19 +9,18 @@
     <section class="project_index_container">
         {% for project in projects %}
             <figure class="project_index_figure">
-            <a href="{{ path("project_show", { id: project.id }) }}">{{ 'See the notice'|trans }}</a>
+            <a href="{{ path("project_show", { id: project.id }) }}"></a>
             <img src="{{ asset('build/images/visual.png') }}" alt="{{ project.name }}">
                 <figcaption class="project_index_figcaption">
-                    <p>{{ project.name }}</p>
-                    <p>{{ 'Category'|trans }} : {{ project.name }}</p>
+                    <p>{{ project.link }}</p>
                 </figcaption>
-                <p class="project_index_p">{{ project.name }}</p>
+                <p class="project_index_p">{{ project.description }}</p>
             </figure>
         {% else %}
-            <p>{{ 'No series found'|trans }}.</p>
+            <p>Pas encore de projet ajouté</p>
         {% endfor %}
     </section>
 
-    <a href="{{ path('project_new') }}">Create new</a>
+    <a href="{{ path('project_new') }}">Ajouté un projet</a>
 </div>
 {% endblock %}
