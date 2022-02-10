@@ -10,11 +10,12 @@
         {% for project in projects %}
             <figure class="project_index_figure">
             <a href="{{ path("project_show", { id: project.id }) }}"></a>
-            <img src="{{ asset('build/images/visual.png') }}" alt="{{ project.name }}">
+            <img src="{{ asset('build/images/marcheConclu.jpg') }}" alt="{{ project.name }}">
                 <figcaption class="project_index_figcaption">
-                    <p>{{ project.link }}</p>
+                    <p>Description : {{ project.description }}</p>
+                    <p>Lien : {{ project.link }}</p>
                 </figcaption>
-                <p class="project_index_p">{{ project.description }}</p>
+                <p class="project_index_p">Logo</p>
             </figure>
         {% else %}
             <p>Pas encore de projet ajouté</p>
