@@ -10,7 +10,7 @@
 ### Install
 
 1. Clone this project
-2. Run `composer install`
+2. Run `composer install` and `composer require symfony/webpack-encore-bundle`
 3. Run `yarn install`
 4. Run `yarn encore dev` to build assets
 

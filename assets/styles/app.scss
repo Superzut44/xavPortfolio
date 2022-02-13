@@ -1,5 +1,12 @@
 @import "~bootstrap/scss/bootstrap";
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    //border: 2px solid red;
+}
+
 body {
     background-color: lightgray;
 }
@@ -7,7 +14,6 @@ body {
 // index start
 
 .index{
-    margin: 25rem 0 5rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
